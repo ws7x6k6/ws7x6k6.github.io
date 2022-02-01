@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <title>JS Programming</title>
+
+ <style>
+   .container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     /*grid-template-rows: 50px 600px 200px;*/
+     grid-template-rows: auto;
+     gap: 10px;
+   }
+
+   .box {
+     background-color: lightsalmon;
+   }
+ </style>
+
+</head>
+
+<body>
+
+
+  <!-- 
+       1) Cos'è un Grid Layout
+       2) Definire una grid: display grid
+       3) Grid flessibili con l'unità fr: grid-template-columns
+       4) Spazio tra le celle: grid-gap
+       5) Repeat
+       6) La funzione minman()
+       7) Tante colonne quante ce ne stanno
+       8) Posizionare elementi nella grid
+   -->
+ 
+ 
+ <div class="container">
+   <div class="box nav" style="
+       grid-column: 1/4;
+       padding: 20px;
+   ">1
+   <h1 style="text-align:center;">JS PROGRAMMING</h1>
+   </div>
+   <div class="box main" style="
+       grid-column: 1/3;
+       padding: 40px;
+   ">2
+   <h1>My article</h1>
+   <p>Lorem ipsum dolor <strong>sit amet</strong> , consectetur adipiscing elit. Morbi in neque a 
+   sem elementum lacinia. Nulla nulla purus, fringilla et metus ultricies, tempus c
+   onsequat lorem. Duis lobortis fringilla nunc, a laoreet nisi pellentesque ut. Mauris 
+   diam arcu, mattis sed mauris ut, pellentesque posuere massa. Etiam consequat vitae mi 
+   eget mattis. Integer felis mauris, hendrerit non congue eget, ornare at sapien. 
+   Ut accumsan eget nibh ut molestie. In interdum nulla enim, at varius enim lobortis
+   nec. Donec finibus mattis arcu sit amet cursus. Mauris non sapien quis dui auctor
+   dapibus a et purus.</p>
+   </div>
+   <div class="box side" style="
+       padding: 40px;
+   ">3
+   <h1>Sidebar</h1>
+   <p>Lorem ipsum dolor <strong>sit amet</strong> , consectetur adipiscing elit. Morbi in neque a 
+   sem elementum lacinia. Nulla nulla purus, fringilla et metus ultricies, tempus c
+   onsequat lorem.</p>
+   </div>
+   <div class="box footer" style="
+       grid-column: 1/4;
+       padding: 20px;
+   ">4
+   Contatti: e-mail
+   </div>   
+ </div>
+
+</body>
+</html>
+
+
+  <!-- Posso in futuro studiare anche grid template areas-->
+
+  <!-- Il codice funziona correttamente bisogna solo rivedere il doctype-->
