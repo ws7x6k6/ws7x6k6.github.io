@@ -15,27 +15,32 @@
      grid-template-columns: 1fr 1fr 1fr 1fr;
      /*grid-template-rows: 50px 600px 200px;*/
      grid-template-rows: auto;
-     gap: 10px;
+     gap: 5px;
    }
 
    .contenitore {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: auto;
-     gap: 10px;
+     gap: 5px;
    }
 
    .contenitorevert {
      display: grid;
      grid-template-rows: 1fr 1fr 1fr;
      grid-template-columns: auto;
-     gap: 10px;
+     gap: 5px;
    }
 
    .box {
      background-color: slategray;
    }
- </style>
+
+   .specialbox {
+     background-color: rebeccapurple;
+   }
+
+</style>
 
 </head>
 
@@ -43,14 +48,6 @@
 
 
   <!-- 
-       1) Cos'è un Grid Layout
-       2) Definire una grid: display grid
-       3) Grid flessibili con l'unità fr: grid-template-columns
-       4) Spazio tra le celle: grid-gap
-       5) Repeat
-       6) La funzione minman()
-       7) Tante colonne quante ce ne stanno
-       8) Posizionare elementi nella grid
    -->
  
  
@@ -62,7 +59,7 @@
    <h1 style="text-align:center;">JavaScript programming</h1>
    </div>
    
-   <div class="contenitore" style="grid-column: 1/5;">
+   <div class="specialbox contenitore" style="grid-column: 1/5;">
 
     <div class="box nav" style="
        grid-column: 1/2;
@@ -81,7 +78,7 @@
 
    </div>
 
-   <div class="contenitorevert" style="grid-column: 1/2;">
+   <div class="specialbox contenitorevert" style="grid-column: 1/2;">
    
    <div class="box side" style="
        grid-row: 1/2;
