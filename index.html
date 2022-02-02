@@ -18,10 +18,17 @@
      gap: 10px;
    }
 
-   .scatolone {
+   .contenitore {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: auto;
+     gap: 10px;
+   }
+
+   .contenitorevert {
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-columns: auto;
      gap: 10px;
    }
 
@@ -55,8 +62,7 @@
    <h1 style="text-align:center;">JavaScript programming</h1>
    </div>
    
-   <div class="scatolone" style="
-       grid-column: 1/5;">
+   <div class="contenitore" style="grid-column: 1/5;">
 
     <div class="box nav" style="
        grid-column: 1/2;
@@ -75,14 +81,24 @@
 
    </div>
 
+   <div class="contenitorevert" style="grid-column: 1/2;">
+   
    <div class="box side" style="
-      grid-column: 1/2;
-      padding: 10px;">
-   <h1>Sidebar</h1>
-   <p>Lorem ipsum dolor <strong>sit amet</strong> , consectetur adipiscing elit. Morbi in neque a 
-   sem elementum lacinia. Nulla nulla purus, fringilla et metus ultricies, tempus c
-   onsequat lorem.</p>
-   </div>
+       grid-row: 1/2;
+       padding: 10px;">
+   <p> Nulla nulla purus, fringilla et metus ultricies, tempus consequat lorem.</p></div>
+
+   <div class="box side" style="
+       grid-row: 2/3;
+       padding: 10px;">
+   <p> Nulla nulla purus, fringilla et metus ultricies, tempus consequat lorem.</p></div>
+
+   <div class="box side" style="
+       grid-row: 3/4;
+       padding: 10px;">
+   <p> Nulla nulla purus, fringilla et metus ultricies, tempus consequat lorem.</p></div>
+
+  </div>
 
    <div class="box main" style="
        grid-column: 2/5;
