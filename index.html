@@ -18,6 +18,13 @@
      gap: 10px;
    }
 
+   .scatolone {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: auto;
+     gap: 10px;
+   }
+
    .box {
      background-color: slategray;
    }
@@ -48,10 +55,17 @@
    <h1 style="text-align:center;">JavaScript programming</h1>
    </div>
    
-   <div class="box nav" style="
-       grid-column: 1/4;
-       padding: 10px;">
-   <h1 style="text-align:center;">Menu bar</h1>
+   <div class="scatolone" style="
+   grid-column: 1/4;
+   padding: 10px;">
+    <div class="box nav" style="
+    grid-column: 1/2;
+    padding: 10px;">
+<h1 style="text-align:center;">Prova sottomenù onsectetur adipiscing elit. Morbi in neque a 
+  sem elementum lacinia. Nulla nulla purus, fringilla et metus ultr</h1>
+
+</div>
+
    </div>
 
    <div class="box side" style="
