@@ -16,16 +16,11 @@
    .container {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
+     /*grid-template-rows: 50px 600px 200px;*/
      grid-template-rows: auto;
      gap: 1px;
    }
 
-   .contenitore {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     grid-template-rows: auto;
-     gap: 1px;
-   }
 
    .contenitorevert {
      display: grid;
@@ -36,7 +31,7 @@
 
    .box {
      background-color: hsla(235, 4%, 2%, 0.9);
-     padding: 1px;
+     padding: 15px;
 
    }
 
@@ -45,6 +40,13 @@
      font-family: 'Archivo', sans-serif;
      color: hsla(61, 14%, 93%, 1)
    }
+
+   section{
+       display: flex;
+       /* flex-wrap: wrap;
+       flex-direction: row; */
+       flex-flow: row wrap;
+      }
 
 </style>
 
@@ -57,43 +59,38 @@
    -->
 
  
- <div class="container" >
+ <div class="container">
    
-
    <div class="box nav" style="
-       grid-column: 1/5; padding: 5px";>
+       grid-column: 1/5; padding: 5px;">
    </div>
 
 
-   <div class="contenitore" style="grid-column: 1/5;">
-
-    <div class="box nav" style="
-       grid-column: 1/2;">
+   <div class="contenitore box" style="grid-column: 1/5;">
+<section>
+    <div class="box nav">
     <h1 style="text-align:center;">Chi siamo</h1></div>
 
-    <div class="box nav" style="
-       grid-column: 2/3;">
+    <div class="box nav">
     <h1 style="text-align:center;">Progetti</h1></div>
 
-    <div class="box nav" style="
-       grid-column: 3/4;">
+    <div class="box nav">
     <h1 style="text-align:center;">Contatti</h1></div>    
-
+  </section>
    </div>
 
    <div class="contenitorevert" style="grid-column: 1/2;">
-   
-   <div class="box side" style="
+    <div class="box side" style="
        grid-row: 1/2;">
-  <h1 style="text-align:center;">Appunti JavaScript</h1></div>
+    <h1 style="text-align:center;">Appunti JavaScript</h1></div>
 
-   <div class="box side" style="
+    <div class="box side" style="
        grid-row: 2/3;">
-   <p style="text-align:center;">Introduzione</p></div>
+    <p style="text-align:center;">Introduzione</p></div>
 
-   <div class="box side" style="
+    <div class="box side" style="
        grid-row: 3/4;">
-   <p style="text-align:center;"> Variabili</p></div>
+    <p style="text-align:center;"> Variabili</p></div>
 
   </div>
 
