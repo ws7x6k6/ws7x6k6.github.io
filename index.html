@@ -15,39 +15,32 @@
      grid-template-columns: 1fr 1fr 1fr 1fr;
      /*grid-template-rows: 50px 600px 200px;*/
      grid-template-rows: auto;
-     gap: 5px;
+     gap: 1px;
    }
 
    .contenitore {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      grid-template-rows: auto;
-     gap: 5px;
+     gap: 1px;
    }
 
    .contenitorevert {
      display: grid;
      grid-template-rows: 1fr 1fr 1fr;
      grid-template-columns: auto;
-     gap: 5px;
+     gap: 1px;
    }
 
    .box {
-     background-color: slategray;
-     padding: 10px;
+     background-color: hsla(235, 4%, 2%, 0.9);
+     padding: 15px;
 
    }
 
-   .specialbox {
-     background-color: rebeccapurple;
-   }
 
-   .sbidiguda {
-     min-width: 100vw;
-   }
-
-   .antani {
-     max-width: 100vw;
+   h1,p {
+     color: hsla(61, 14%, 93%, 1)
    }
 
 </style>
@@ -63,12 +56,18 @@
  
  <div class="container">
    
-   <div class="box nav sbidiguda" style="
+  <!--
+   <div class="box nav" style="
        grid-column: 1/5; white-space: nowrap;";>
    <h1 style="text-align: center;">JavaScript programming</h1>
    </div>
-   
-   <div class="specialbox contenitore antani" style="grid-column: 1/5;">
+   -->
+   <div class="box nav" style="
+       grid-column: 1/5; padding: 5px;">
+   </div>
+
+
+   <div class="contenitore" style="grid-column: 1/5;">
 
     <div class="box nav" style="
        grid-column: 1/2;">
@@ -84,7 +83,7 @@
 
    </div>
 
-   <div class="specialbox contenitorevert" style="grid-column: 1/2;">
+   <div class="contenitorevert" style="grid-column: 1/2;">
    
    <div class="box side" style="
        grid-row: 1/2;">
