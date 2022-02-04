@@ -20,7 +20,6 @@
      gap: 1px;
    }
 
-
    .contenitorevert {
      display: grid;
      grid-template-rows: 1fr 1fr 1fr;
@@ -46,15 +45,15 @@
      flex-grow: 1;
     }
 
-
    h1,p {
      font-family: 'Archivo', sans-serif;
      color: hsla(61, 14%, 93%, 1);
+     text-align:center;
    }
 
    .menu{
        display: flex;
-       flex-flow: wrap;
+       flex-flow: nowrap;
        background-color: hsla(235, 4%, 8%, 0.90);
        /*justify-content: space-around; non funziona insieme a grow*/
       }
@@ -78,22 +77,22 @@
 
    <div class="menu" style="grid-column: 1/5;">
 
-    <div class="specialbox nav">
+    <div class="specialbox item nav">
     <h1>Chi siamo</h1></div>
 
-    <div class="specialbox nav">
+    <div class="specialbox item nav">
     <h1>Progetti</h1></div>
 
-    <div class="specialbox nav">
+    <div class="specialbox item nav">
     <h1>Contatti</h1></div>    
 
-    <div class="specialbox nav">
+    <div class="specialbox item nav">
     <h1>Prova1</h1></div>  
 
-    <div class="specialbox nav">
+    <div class="specialbox item nav">
     <h1>Prova2</h1></div>  
         
-    <div class="specialbox nav">
+    <div class="specialbox item nav">
     <h1>Prova3</h1></div>  
           
    </div>
@@ -174,4 +173,9 @@
        grid-column: 1/5; white-space: nowrap;";>
    <h1 style="text-align: center;">JavaScript programming</h1>
    </div>
+
+
+       .specialbox:nth-child(3n) {
+    flex-basis: 100%;
+}
    -->
