@@ -20,43 +20,41 @@
      gap: 1px;
    }
 
-   .contenitorevert {
-     display: grid;
-     grid-template-rows: 1fr 1fr 1fr;
-     grid-template-columns: auto;
-     gap: 1px;
-   }
+
 
    .box {
      background-color: hsla(235, 4%, 8%, 0.90);
      padding-top: 1px;
-     padding-right: 30px;
+     padding-right: 10px;
      padding-bottom: 1px;
-     padding-left: 30px;
+     padding-left: 10px;
    } 
+   
 
    .specialbox {
-     /*margin:auto; non funziona insieme a grow*/
+     /*margin:auto; /*non funziona insieme a grow*/
      background-color: hsla(235, 4%, 8%, 0.90);
-     padding-top: 1px;
-     padding-right: 30px;
-     padding-bottom: 1px;
-     padding-left: 30px;
-     flex-grow: 1;
+     padding-right: 10px;
+     padding-left: 10px;
+     /*flex-grow: 1;*/
     }
 
    h1,p {
      font-family: 'Archivo', sans-serif;
      color: hsla(61, 14%, 93%, 1);
-     text-align:center;
+     /*text-align:center;*/
    }
 
    .menu{
        display: flex;
-       flex-flow: nowrap;
+       flex-flow: wrap;
        background-color: hsla(235, 4%, 8%, 0.90);
-       /*justify-content: space-around; non funziona insieme a grow*/
+       justify-content: space-around; /*non funziona insieme a grow e margin auto*/
       }
+
+    .menuverticale{
+     background-color: hsla(235, 4%, 8%, 0.90);
+    }
 
 </style>
 
@@ -70,45 +68,42 @@
  
  <div class="container">
    
-   <div class="box nav" style="
+   <div class="box" style="
        grid-column: 1/5;">
    </div>
 
 
    <div class="menu" style="grid-column: 1/5;">
 
-    <div class="specialbox item nav">
+    <div class="specialbox">
     <h1>Chi siamo</h1></div>
 
-    <div class="specialbox item nav">
+    <div class="specialbox">
     <h1>Progetti</h1></div>
 
-    <div class="specialbox item nav">
+    <div class="specialbox">
     <h1>Contatti</h1></div>    
 
-    <div class="specialbox item nav">
+    <div class="specialbox">
     <h1>Prova1</h1></div>  
 
-    <div class="specialbox item nav">
+    <div class="specialbox">
     <h1>Prova2</h1></div>  
         
-    <div class="specialbox item nav">
+    <div class="specialbox">
     <h1>Prova3</h1></div>  
           
    </div>
 
-   <div class="contenitorevert" style="grid-column: 1/2;">
-    <div class="box side" style="
-       grid-row: 1/2;">
-    <h1 style="text-align:center;">Appunti JavaScript</h1></div>
+   <div class="menuverticale" style="grid-column: 1/2;">
+    <div class="specialbox">
+    <h1>Appunti JavaScript</h1></div>
 
-    <div class="box side" style="
-       grid-row: 2/3;">
-    <p style="text-align:center;">Introduzione</p></div>
+    <div class="specialbox">
+    <h1>Introduzione</h1></div>
 
-    <div class="box side" style="
-       grid-row: 3/4;">
-    <p style="text-align:center;"> Variabili</p></div>
+    <div class="specialbox">
+    <h1> Variabili</h1></div>
 
   </div>
 
@@ -154,7 +149,7 @@
    <div class="box footer" style="
        grid-column: 1/5;">
 
-   Contatti: e-mail
+   <p>Contatti: e-mail</p>
    </div>   
  </div>
 
@@ -174,6 +169,16 @@
    <h1 style="text-align: center;">JavaScript programming</h1>
    </div>
 
+
+
+
+
+      .contenitorevert {
+     display: grid;
+     grid-template-rows: 1fr 1fr 1fr;
+     grid-template-columns: auto;
+     gap: 1px;
+   }
 
        .specialbox:nth-child(3n) {
     flex-basis: 100%;
