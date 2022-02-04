@@ -34,9 +34,17 @@
      padding-right: 30px;
      padding-bottom: 1px;
      padding-left: 30px;
-     
+   } 
 
-   }
+   .specialbox {
+     /*margin:auto; non funziona insieme a grow*/
+     background-color: hsla(235, 4%, 8%, 0.90);
+     padding-top: 1px;
+     padding-right: 30px;
+     padding-bottom: 1px;
+     padding-left: 30px;
+     flex-grow: 1;
+    }
 
 
    h1,p {
@@ -46,11 +54,9 @@
 
    .menu{
        display: flex;
-       /* flex-wrap: wrap;
-       flex-direction: row; */
        flex-flow: wrap;
        background-color: hsla(235, 4%, 8%, 0.90);
-       justify-content: space-evenly;
+       /*justify-content: space-around; non funziona insieme a grow*/
       }
 
 </style>
@@ -72,23 +78,23 @@
 
    <div class="menu" style="grid-column: 1/5;">
 
-    <div class="box nav">
-    <h1 style="text-align:center;">Chi siamo</h1></div>
+    <div class="specialbox nav">
+    <h1>Chi siamo</h1></div>
 
-    <div class="box nav">
-    <h1 style="text-align:center;">Progetti</h1></div>
+    <div class="specialbox nav">
+    <h1>Progetti</h1></div>
 
-    <div class="box nav">
-    <h1 style="text-align:center;">Contatti</h1></div>    
+    <div class="specialbox nav">
+    <h1>Contatti</h1></div>    
 
-    <div class="box nav">
-    <h1 style="text-align:center;">Prova1</h1></div>  
+    <div class="specialbox nav">
+    <h1>Prova1</h1></div>  
 
-    <div class="box nav">
-    <h1 style="text-align:center;">Prova2</h1></div>  
+    <div class="specialbox nav">
+    <h1>Prova2</h1></div>  
         
-    <div class="box nav">
-    <h1 style="text-align:center;">Prova3</h1></div>  
+    <div class="specialbox nav">
+    <h1>Prova3</h1></div>  
           
    </div>
 
