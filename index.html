@@ -17,23 +17,15 @@
    .container {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-     grid-template-rows: auto;
+     grid-template-rows: 100vh;
      gap: 1px;
    }
 
    .box {
-     background-color: hsla(235, 4%, 8%, 0.90);
-     padding-top: 1px;
-     padding-right: 10px;
-     padding-bottom: 1px;
-     padding-left: 10px;
-   } 
-   
-   .specialbox {
      /*margin:auto; /*non funziona insieme a grow*/
      background-color: hsla(235, 4%, 8%, 0.90);
-     padding-right: 10px;
-     padding-left: 10px;
+     padding-right: 20px;
+     padding-left: 20px;
      /*flex-grow: 1;*/
     }
 
@@ -57,6 +49,7 @@
     .main{
       grid-column: 2/10; 
       padding: 15px;
+      background-color: rgba(163, 163, 170, 0.753);
     }
 
     .menuverticale{
@@ -66,87 +59,58 @@
     /*Fine*/
 
     @media (max-width: 1300px){
+      .container{
+        display: block;
+      }
       .menuverticale{
-       grid-column: 1/10;
        display:flex;
        justify-content: space-around;
        flex-flow: wrap;
       }
       .main{
-        grid-column: 1/10; 
+         /**/
       }
     }
-
-    @media (max-width: 880px){
-      .menuverticale{
-       grid-column: 1/10;
-       display:flex;
-       justify-content: space-around;
-       flex-flow: wrap;
-       max-width: 70%;
-      }
-      .main{
-        grid-column: 1/10; 
-      }
-    }
-
-*/
-
 
 
 </style>
 
-</head>
+
 
 <body>
 
+  <script>
+    let prova = setTimeout(function(){
+      saluta()
+    }, 3000);
 
-  <!-- 
-   -->
+    function saluta(){
+      alert('ciao sono in timeout');    
+    }
+
+  </script>
+
+
+
+  <div class="box" style="display:flex; flex-grow: 1; padding: 10px;">
+  </div>
  
+  <div class="menu">
+    <div class="box"><h1>Chi sono</h1></div>
+    <div class="box"><h1>Progetti</h1></div>
+    <div class="box"><h1>Contatti</h1></div>    
+    <div class="box"><h1>Prova1</h1></div>  
+    <div class="box"><h1>Prova2</h1></div>  
+    <div class="box"><h1>Prova3</h1></div>  
+  </div>
+
  <div class="container">
-   
-   <div class="box" style="
-       grid-column: 1/10; padding: 10px;">
-   </div>
-
-
-   <div class="menu" style="grid-column: 1/10;">
-
-    <div class="specialbox">
-    <h1>Chi siamo</h1></div>
-
-    <div class="specialbox">
-    <h1>Progetti</h1></div>
-
-    <div class="specialbox">
-    <h1>Contatti</h1></div>    
-
-    <div class="specialbox">
-    <h1>Prova1</h1></div>  
-
-    <div class="specialbox">
-    <h1>Prova2</h1></div>  
-        
-    <div class="specialbox">
-    <h1>Prova3</h1></div>  
-          
-   </div>
 
    <div class="menuverticale">
-    <div class="specialbox">
-    <h1>Appunti JavaScript</h1></div>
-
-    <div class="specialbox">
-    <h1>Introduzione</h1></div>
-
-    <div class="specialbox">
-    <h1> Variabili</h1></div>
-
-    <div class="specialbox">
-    <h1> Variabili1</h1></div>
-
-
+    <div class="box"><h1>Appunti JavaScript</h1></div>
+    <div class="box"><h1>Introduzione</h1></div>
+    <div class="box"><h1> Variabili</h1></div>
+    <div class="box"><h1> Variabili1</h1></div>
   </div>
 
 
@@ -186,44 +150,13 @@
    dapibus a et purus.</p>
 
    </div>
-   
-   
-   <div class="box footer" style="
-       grid-column: 1/10;">
+     
+ </div> 
 
-   <p>Contatti: e-mail</p>
-   </div>   
- </div>
+ <div class="box footer" style="display:flex; flex-grow: 1; padding: 10px;"></div>
 
 </body>
 </html>
 
 
-  <!-- Posso in futuro studiare anche grid template areas-->
-
-  <!-- Il codice funziona correttamente bisogna solo rivedere il doctype-->
-
-
-
-    <!-- CODICE DEPRECATO
-   <div class="box nav" style="
-       grid-column: 1/5; white-space: nowrap;";>
-   <h1 style="text-align: center;">JavaScript programming</h1>
-   </div>
-
-style="
-       grid-column: 2/5; padding: 15px;"
-
-
-
-      .contenitorevert {
-     display: grid;
-     grid-template-rows: 1fr 1fr 1fr;
-     grid-template-columns: auto;
-     gap: 1px;
-   }
-
-       .specialbox:nth-child(3n) {
-    flex-basis: 100%;
-}
-   -->
+  <!-- -->
