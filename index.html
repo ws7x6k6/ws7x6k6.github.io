@@ -35,6 +35,10 @@
      /*text-align:center;*/
    }
 
+   .fixed{
+     position: fixed;
+   }
+
    .menu{
        display: flex;
        flex-flow: wrap;
@@ -73,11 +77,19 @@
     }
 
 
+    #divfix {
+       bottom: 0;
+       right: 0;
+       position: fixed;
+       z-index: 3000;
+}
 </style>
 
 
 
 <body>
+
+  <!--
 
   <script>
     let prova = setTimeout(function(){
@@ -89,12 +101,13 @@
     }
 
   </script>
-
+ -->
 
 
   <div class="box" style="display:flex; flex-grow: 1; padding: 10px;">
   </div>
  
+  <div id="divfix">
   <div class="menu">
     <div class="box"><h1>Chi sono</h1></div>
     <div class="box"><h1>Progetti</h1></div>
@@ -103,6 +116,7 @@
     <div class="box"><h1>Prova2</h1></div>  
     <div class="box"><h1>Prova3</h1></div>  
   </div>
+</div>
 
  <div class="container">
 
@@ -159,4 +173,3 @@
 </html>
 
 
-  <!-- -->
