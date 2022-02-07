@@ -12,18 +12,19 @@
  <style>
 /*Reset dei margini*/
 body{
-        margin: 0px;
+        margin-left: 80px;
+        margin-right: 80px;
         padding: 0px;
     }
 
-    h1 {
+    h1{
         margin: 0px;
     }
 
    .container {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-     grid-template-rows: 100vh;
+     grid-template-rows: 80vh;
      /*gap: 1px;*/
    }
 
@@ -37,14 +38,14 @@ body{
      /*flex-grow: 1;*/
     }
 
-   h1,p {
+   h1,h3,p {
      font-family: 'Archivo', sans-serif;
      /*text-align:center;*/
    }
 
    .fixed {
      position: fixed;
-     top: 10px;
+     top: 0;
      left: 0;   /*left: 232.72px;*/
      right: 0;
     }
@@ -114,24 +115,24 @@ da usare con   <div id="divfix">
  -->
 
 
-  <div class="head" style="display:flex; flex-grow: 1; padding: 50px; background-color: rgb(209, 196, 17);"></div> <!--Minimo 17.5 -->
+ <div class="head" style="display:flex; flex-grow: 1; padding: 30px;"></div>
  
   <div class="menu fixed">
-    <div class="box"><h1>Chi sono</h1></div>
-    <div class="box"><h1>Progetti</h1></div>
-    <div class="box"><h1>Contatti</h1></div>    
-    <div class="box"><h1>Prova1</h1></div>  
-    <div class="box"><h1>Prova2</h1></div>  
-    <div class="box"><h1>Prova3</h1></div>  
+    <div class="box"><h3>Chi sono</h3></div>
+    <div class="box"><h3>Progetti</h3></div>
+    <div class="box"><h3>Contatti</h3></div>    
+    <div class="box"><h3>Prova1</h3></div>  
+    <div class="box"><h3>Prova2</h3></div>  
+    <div class="box"><h3>Prova3</h3></div>  
   </div>
 
  <div class="container">
 
-   <div class="menuverticale">
-    <div class="box"><h1>Nuova Prova appunti JavaScript</h1></div>
-    <div class="box"><h1>Introduzione</h1></div>
-    <div class="box"><h1> Variabili</h1></div>
-    <div class="box"><h1> Variabili1</h1></div>
+   <div class="menuverticale" style="overflow-y:scroll">
+    <div class="box"><h3>JavaScript</h3></div>
+    <div class="box"><h3>Introduzione</h3></div>
+    <div class="box"><h3> Variabili</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
   </div>
 
 
@@ -173,9 +174,9 @@ da usare con   <div id="divfix">
    </div>
      
  </div> 
+ <div class="box footer" style="display:flex; padding: 100px; background-color: rgb(104, 104, 112);"></div>
 
- <div class="box footer" style="display:flex; flex-grow: 1; padding: 100px; background-color: rgb(104, 104, 112);"></div>
-
+ 
 </body>
 </html>
 
