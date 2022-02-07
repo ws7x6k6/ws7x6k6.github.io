@@ -10,10 +10,8 @@
  <title>JS Programming</title>
  
  <style>
-/*Reset dei margini*/
 body{
-        margin-left: 0;
-        margin-right: 0;
+        margin:0;
         padding: 0px;
     }
     h1{
@@ -21,30 +19,29 @@ body{
     }
 
    .container {
-     position: relative;
-     height: 100vh;
-     margin-inline: 300px;
+     min-height: 100vh;
+     height: fit-content;
+     margin-inline: 20vw;
+     margin-top: 10vh;
+     margin-bottom: 10vh;
    }
 
    .box {
-     /*margin:auto; /*non funziona insieme a grow*/
+     /*margin:auto; /*non funziona insieme a flex grow*/
      background-color: rgb(40, 40, 46);
      color: hsla(61, 14%, 93%, 1);
      padding-right: 20px;
      padding-left: 20px;
-     
-     /*flex-grow: 1;*/
     }
 
    h1,h3,p {
      font-family: 'Archivo', sans-serif;
-     /*text-align:center;*/
    }
 
    .fixed {
      position: fixed;
      top: 0;
-     left: 0;   /*left: 232.72px;*/
+     left: 0;
      right: 0;
     }
 
@@ -57,27 +54,12 @@ body{
 
      .menuverticale{
       position: fixed;
-      width: min-content;
-      height: 400px;
-      background-color: rgb(40, 40, 46);;
-      left: 80px;
+      width: 15vw;
+      height: 20vh;
+      background-color: rgb(40, 40, 46);
     }
-
-    /*Fine*/
-
-    @media (max-width: 1300px){
-      .container{
-        display: block;
-      }
-      .menuverticale{
-       display:flex;
-       justify-content: space-around;
-       flex-flow: wrap;
-      }
-      .main{
-         /**/
-      }
-    }
+/*
+    @media (max-width: 1300px){}
 
 /*
     #divfix {
@@ -91,34 +73,13 @@ da usare con   <div id="divfix">
 */
 </style>
 
-
-
 <body>
-
-  <!--
-
-  <script>
-    let prova = setTimeout(function(){
-      saluta()
-    }, 3000);
-
-    function saluta(){
-      alert('ciao sono in timeout');    
-    }
-
-  </script>
- -->
-
-
- <div class="head" style="display:flex; flex-grow: 1; padding: 30px;"></div>
  
   <div class="menu fixed">
     <div class="box"><h3>Chi sono</h3></div>
     <div class="box"><h3>Progetti</h3></div>
     <div class="box"><h3>Contatti</h3></div>    
-    <div class="box"><h3>Prova1</h3></div>  
-    <div class="box"><h3>Prova2</h3></div>  
-    <div class="box"><h3>Prova3</h3></div>  
+    <div class="box"><h3>Prova1</h3></div>    
   </div>
 
   <div class="menuverticale" style="overflow-y:scroll">
@@ -140,7 +101,6 @@ da usare con   <div id="divfix">
 
  <div class="container">
 
-   <div class="main">
    <h1>My article</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in neque a 
    sem elementum lacinia. Nulla nulla purus, fringilla et metus ultricies, tempus c
@@ -174,12 +134,10 @@ da usare con   <div id="divfix">
    Ut accumsan eget nibh ut molestie. In interdum nulla enim, at varius enim lobortis
    nec. Donec finibus mattis arcu sit amet cursus. Mauris non sapien quis dui auctor
    dapibus a et purus.</p>
-
-   </div>
      
  </div> 
- <div class="box footer" style="display:flex; padding: 100px; background-color: rgb(104, 104, 112);"></div>
-
+ 
+ <div class="box footer" style="display:flex; padding: 80px; background-color:rgb(40, 40, 46); ;"></div>
  
 </body>
 </html>
