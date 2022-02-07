@@ -12,20 +12,18 @@
  <style>
 /*Reset dei margini*/
 body{
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 0;
+        margin-right: 0;
         padding: 0px;
     }
-
     h1{
         margin: 0px;
     }
 
    .container {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-     grid-template-rows: 80vh;
-     /*gap: 1px;*/
+     position: relative;
+     height: 100vh;
+     margin-inline: 300px;
    }
 
    .box {
@@ -57,15 +55,12 @@ body{
        justify-content: space-around; /*non funziona insieme a grow e margin auto*/
       }
 
-    /*Parte di codice che serve per stabilire le posizioni iniziali*/
-    .main{
-      grid-column: 2/10; 
-      padding: 15px;
-    }
-
-    .menuverticale{
-      grid-column: 1/2;
+     .menuverticale{
+      position: fixed;
+      width: min-content;
+      height: 400px;
       background-color: rgb(40, 40, 46);;
+      left: 80px;
     }
 
     /*Fine*/
@@ -126,15 +121,24 @@ da usare con   <div id="divfix">
     <div class="box"><h3>Prova3</h3></div>  
   </div>
 
- <div class="container">
-
-   <div class="menuverticale" style="overflow-y:scroll">
+  <div class="menuverticale" style="overflow-y:scroll">
     <div class="box"><h3>JavaScript</h3></div>
     <div class="box"><h3>Introduzione</h3></div>
     <div class="box"><h3> Variabili</h3></div>
     <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
+    <div class="box"><h3> Variabili1</h3></div>
   </div>
 
+ <div class="container">
 
    <div class="main">
    <h1>My article</h1>
