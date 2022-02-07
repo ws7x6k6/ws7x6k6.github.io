@@ -1,63 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <meta>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Importante specialmente per i siti responsive-->
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-  <title>JS Programming</title>
-
+ <link rel="icon" type="image/png" href="images/favicon.png">
+ <title>JS Programming</title>
+ 
  <style>
+/*Reset dei margini*/
+body{
+        margin: 0px;
+        padding: 0px;
+    }
+h1 {
+        margin: 0px;
+    }
 
    .container {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
      grid-template-rows: 100vh;
-     gap: 1px;
+     /*gap: 1px;*/
    }
 
    .box {
      /*margin:auto; /*non funziona insieme a grow*/
-     background-color: hsla(235, 4%, 8%, 0.90);
+     background-color: rgb(40, 40, 46);
+     color: hsla(61, 14%, 93%, 1);
      padding-right: 20px;
      padding-left: 20px;
+     
      /*flex-grow: 1;*/
     }
 
    h1,p {
      font-family: 'Archivo', sans-serif;
-     color: hsla(61, 14%, 93%, 1);
      /*text-align:center;*/
    }
 
-   .fixed{
+   .fixed {
      position: fixed;
-   }
+     top: 0;
+     left: 232.72px;
+     right: 0;
+    }
 
    .menu{
        display: flex;
        flex-flow: wrap;
-       background-color: hsla(235, 4%, 8%, 1);
+       background-color: rgb(40, 40, 46);;
        justify-content: space-around; /*non funziona insieme a grow e margin auto*/
       }
 
-    .menuverticale{
-     background-color: hsla(235, 4%, 8%, 1);
-    }
     /*Parte di codice che serve per stabilire le posizioni iniziali*/
     .main{
       grid-column: 2/10; 
       padding: 15px;
-      background-color: rgba(163, 163, 170, 0.753);
     }
 
     .menuverticale{
       grid-column: 1/2;
+      background-color: rgb(40, 40, 46);;
     }
 
     /*Fine*/
@@ -76,13 +82,16 @@
       }
     }
 
-
+/*
     #divfix {
        bottom: 0;
        right: 0;
        position: fixed;
        z-index: 3000;
 }
+
+da usare con   <div id="divfix">
+*/
 </style>
 
 
@@ -104,11 +113,9 @@
  -->
 
 
-  <div class="box" style="display:flex; flex-grow: 1; padding: 10px;">
-  </div>
+  <div class="box" style="display:flex; flex-grow: 1; padding: 17.5px;"></div>
  
-  <div id="divfix">
-  <div class="menu">
+  <div class="menu fixed">
     <div class="box"><h1>Chi sono</h1></div>
     <div class="box"><h1>Progetti</h1></div>
     <div class="box"><h1>Contatti</h1></div>    
@@ -116,7 +123,6 @@
     <div class="box"><h1>Prova2</h1></div>  
     <div class="box"><h1>Prova3</h1></div>  
   </div>
-</div>
 
  <div class="container">
 
@@ -128,7 +134,7 @@
   </div>
 
 
-   <div class="box main">
+   <div class="main">
    <h1>My article</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in neque a 
    sem elementum lacinia. Nulla nulla purus, fringilla et metus ultricies, tempus c
@@ -167,7 +173,7 @@
      
  </div> 
 
- <div class="box footer" style="display:flex; flex-grow: 1; padding: 10px;"></div>
+ <div class="box footer" style="display:flex; flex-grow: 1; padding: 100px; background-color: rgb(104, 104, 112);"></div>
 
 </body>
 </html>
