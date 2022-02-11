@@ -50,3 +50,8 @@
        margin-bottom: 10px;
        overflow-y: scroll;
     }
+    .main{
+      grid-column: 2/3;
+      margin: 10px;
+      min-height: 100vh;
+    }
