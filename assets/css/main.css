@@ -1,0 +1,52 @@
+ /*Resetting values*/
+ body{
+        margin:0;
+        padding: 0px;
+    }
+    /*
+    h1{
+        margin: 0px;
+    }
+    */
+    /*Describing the frame of the website*/
+   .container {
+     margin-top: 100px; /*Margin to overcome an "always on top item"*/
+     display: grid;
+     grid-template-columns: 1fr 1000px 1fr;
+     grid-template-rows: auto;
+   }
+   /*A generic box used to write some text or put some content*/
+   .box {
+     /*margin:auto; /*Deprecated, does not work with flex: grow or justify content*/
+     padding-right: 20px;
+     padding-left: 20px;
+    }
+    /*Describing fonts*/
+   h1,h3,p {
+     font-family: 'Archivo', sans-serif;
+   }
+    /*This menu should be always on top, we will make a dedicated class for that purpose*/
+   .menu{
+       display: flex;
+       flex-flow: wrap;
+       color: hsla(61, 14%, 93%, 1);
+       background-color: rgb(206, 161, 102);
+       justify-content: space-around; /*non funziona insieme a grow e margin auto*/
+      }
+      /*This class is created to make an item always on top*/
+      .fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+      /*Vertical menu*/
+     .menuverticale{
+       margin-left: 20px;
+       background-color: rgb(200, 200, 202);
+       width:fit-content;
+       /*height: fit-content;*/
+       margin-top: 10px;
+       margin-bottom: 10px;
+       overflow-y: scroll;
+    }
