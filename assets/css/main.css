@@ -55,3 +55,8 @@
       margin: 10px;
       min-height: 100vh;
     }
+    .footer{
+      display:flex;
+      padding: 100px; 
+      background-color:rgb(79, 79, 82);
+    }
