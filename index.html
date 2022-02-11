@@ -14,22 +14,20 @@ body{
         margin:0;
         padding: 0px;
     }
+    /*
     h1{
         margin: 0px;
     }
-
+*/
    .container {
-     min-height: 100vh;
-     height: fit-content;
-     margin-inline: 20vw;
-     margin-top: 10vh;
-     margin-bottom: 10vh;
+     margin-top: 100px;
+     display: grid;
+     grid-template-columns: 1fr 1000px 1fr;
+     grid-template-rows: auto;
    }
 
    .box {
      /*margin:auto; /*non funziona insieme a flex grow*/
-     background-color: rgb(40, 40, 46);
-     color: hsla(61, 14%, 93%, 1);
      padding-right: 20px;
      padding-left: 20px;
     }
@@ -48,15 +46,19 @@ body{
    .menu{
        display: flex;
        flex-flow: wrap;
-       background-color: rgb(40, 40, 46);;
+       color: hsla(61, 14%, 93%, 1);
+       background-color: rgb(206, 161, 102);
        justify-content: space-around; /*non funziona insieme a grow e margin auto*/
       }
 
      .menuverticale{
-      position: fixed;
-      width: 15vw;
-      height: 20vh;
-      background-color: rgb(40, 40, 46);
+       margin-left: 20px;
+       background-color: rgb(200, 200, 202);
+       width:fit-content;
+       /*height: fit-content;*/
+       margin-top: 10px;
+       margin-bottom: 10px;
+       overflow-y: scroll;
     }
 /*
     @media (max-width: 1300px){}
@@ -80,27 +82,23 @@ da usare con   <div id="divfix">
     <div class="box"><h3>Progetti</h3></div>
     <div class="box"><h3>Contatti</h3></div>    
     <div class="box"><h3>Prova1</h3></div>    
+
   </div>
 
-  <div class="menuverticale" style="overflow-y:scroll">
-    <div class="box"><h3>JavaScript</h3></div>
-    <div class="box"><h3>Introduzione</h3></div>
-    <div class="box"><h3> Variabili</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-    <div class="box"><h3> Variabili1</h3></div>
-  </div>
+
 
  <div class="container">
 
+  <div class="menuverticale" style="grid-column: 1/2;">
+    <div class="box">
+      <ul>
+        <li><a href="introduzione.html">Introduzione</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="main" style="grid-column: 2/3; margin: 10px; min-height: 100vh;">
    <h1>My article</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in neque a 
    sem elementum lacinia. Nulla nulla purus, fringilla et metus ultricies, tempus c
@@ -134,10 +132,14 @@ da usare con   <div id="divfix">
    Ut accumsan eget nibh ut molestie. In interdum nulla enim, at varius enim lobortis
    nec. Donec finibus mattis arcu sit amet cursus. Mauris non sapien quis dui auctor
    dapibus a et purus.</p>
-     
+   
+   <hr>
+   <br> 
+  </div>
+   
  </div> 
  
- <div class="box footer" style="display:flex; padding: 80px; background-color:rgb(40, 40, 46); ;"></div>
+ <div class="box footer" style="display:flex; padding: 100px; background-color:rgb(79, 79, 82); ;"></div>
  
 </body>
 </html>
