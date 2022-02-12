@@ -10,14 +10,31 @@
  <link rel="stylesheet" href="../assets/css/main.css" />
  <title>JS Programming</title>
  
- <style></style>
+ <style>
+   ul {
+    display: flex;
+    align-items: stretch; /* Default */
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+li {
+    display: block;
+    flex: 0 1 auto; /* Default */
+    list-style-type: none;
+}
+ </style>
 
 <body>
   <div class="menu fixed">
-    <div class="box"><h3>Chi sono</h3></div>
-    <div class="box"><h3>Progetti</h3></div>
-    <div class="box"><h3>Contatti</h3></div>    
-    <div class="box"><h3>Prova1</h3></div>    
+    <ul>
+      <li><h3>Chi sono</h3></li>
+      <li><h3>Progetti</h3></li>
+      <li><h3>Contatti</h3></li>
+      <li><h3>Prova1</h3></li>
+    </ul>
+  </div>    
   </div>
 
  <div class="container">
