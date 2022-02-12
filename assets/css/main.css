@@ -67,9 +67,9 @@
       width: 100%;
       margin: 0;
       padding: 0;
-  }
-  .menubaritem {
+    }
+    .menubaritem {
       display: block;
       flex: 0 1 auto; /* Default */
       list-style-type: none;
-  }
+    }
