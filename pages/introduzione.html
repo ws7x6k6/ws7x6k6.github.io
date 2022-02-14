@@ -28,12 +28,15 @@
   <!--end of Navigation bar-->
 
  <div class="container">
-
-  <div class="vertmenu" style="grid-column: 1/2;">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-    </ul>
-  </div>
+    <!--Vertmenu-->
+    <div id="vertmenu-placeholder">
+    </div>
+    <script>
+    $(function(){
+      $("#vertmenu-placeholder").load("../vertmenu.html");
+      });
+      </script>
+      <!--end of Navigation bar-->
 
   <div class="main">
    <h1>Introduzione</h1>
