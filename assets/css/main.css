@@ -73,3 +73,9 @@
       flex: 0 1 auto; /* Default */
       list-style-type: none;
     }
+    a:link, a:hover {
+      text-decoration: none;
+    }
+    a, a:visited, a:hover, a:active {
+      color: inherit;
+    }
