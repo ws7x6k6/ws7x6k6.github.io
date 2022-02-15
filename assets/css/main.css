@@ -65,7 +65,7 @@
       display: block;
       flex: 0 1 auto; /* Default */
       list-style-type: none;
-      width: 300px;
+      width: 20%;
       text-align: center;
     }
     .vertbaritem {
