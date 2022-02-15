@@ -19,4 +19,6 @@ ul {
   padding: 0;
 }
 
-
+.menubaritem:hover .hiddenmenu {
+  display:block;
+}

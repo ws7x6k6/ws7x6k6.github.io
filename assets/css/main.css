@@ -17,21 +17,17 @@
        background-color: rgb(206, 161, 102);
        /*justify-content: space-around; /*non funziona insieme a grow e margin auto*/
       }
-      /*This class is created to make an item always on top*/
-      .fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-      }
       .hiddenmenu{
-        display: block;
-        margin-top: 57.44px; /*Margin to overcome an "always on top item"*/
+        width: 300px;
+        position: fixed;
+        display: none;
+        top: 57.44px; /*Margin to overcome an "always on top item"*/
         color: hsla(61, 14%, 93%, 1);
         background-color: rgb(155, 101, 30);
-       }
+        margin-left: -150px;
+        }
        /*This class is created to make an item always on top*/
-       .fixed {
+       .menu {
          position: fixed;
          top: 0;
          left: 0;
