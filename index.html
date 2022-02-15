@@ -12,7 +12,11 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
  <title>Guide Informatiche</title>
  </head>
- <style></style>
+ <style>
+   .footer:hover {
+  display: none;
+}
+ </style>
 
 <body>
   <!--Navigation bar-->
@@ -21,6 +25,16 @@
   <script>
   $(function(){
     $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+  <!--hidden_menu-->
+  <div id="hiddenmenu-placeholder">
+  </div>
+  <script>
+  $(function(){
+    $("#hiddenmenu-placeholder").load("hiddenmenu.html");
     });
     </script>
     <!--end of Navigation bar-->
@@ -34,7 +48,7 @@
       $("#vertmenu-placeholder").load("vertmenu.html");
       });
       </script>
-      <!--end of Navigation bar-->
+      <!--end of Vertmenu-->
 
   <div class="main">
    <h1>Guide Informatiche</h1>
@@ -78,7 +92,7 @@
    
  </div> 
  
- <div class="box footer"></div>
+ <div class="footer"></div>
  
 </body>
 </html>

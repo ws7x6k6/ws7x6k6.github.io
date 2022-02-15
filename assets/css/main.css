@@ -5,12 +5,6 @@
      grid-template-columns: 1fr 1000px 1fr;
      grid-template-rows: auto;
    }
-   /*A generic box used to write some text or put some content*/
-   .box {
-     /*margin:auto; /*Deprecated, does not work with flex: grow or justify content*/
-     padding-right: 20px;
-     padding-left: 20px;
-    }
     /*Describing fonts*/
    h1,h3,p {
      font-family: 'Archivo', sans-serif;
@@ -21,7 +15,7 @@
        flex-flow: wrap;
        color: hsla(61, 14%, 93%, 1);
        background-color: rgb(206, 161, 102);
-       justify-content: space-around; /*non funziona insieme a grow e margin auto*/
+       /*justify-content: space-around; /*non funziona insieme a grow e margin auto*/
       }
       /*This class is created to make an item always on top*/
       .fixed {
@@ -30,6 +24,19 @@
         left: 0;
         right: 0;
       }
+      .hiddenmenu{
+        display: block;
+        margin-top: 57.44px; /*Margin to overcome an "always on top item"*/
+        color: hsla(61, 14%, 93%, 1);
+        background-color: rgb(155, 101, 30);
+       }
+       /*This class is created to make an item always on top*/
+       .fixed {
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+       }
       /*Vertical menu*/
      .vertmenu{
        margin-left: 20px;
@@ -47,7 +54,7 @@
       min-height: 100vh;
     }
     .footer{
-      display:flex;
+      display: block;
       padding: 100px; 
       background-color:rgb(79, 79, 82);
     }
