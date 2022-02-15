@@ -23,6 +23,7 @@
         top: 57.44px; /*Margin to overcome an "always on top item"*/
         color: hsla(61, 14%, 93%, 1);
         background-color: rgb(155, 101, 30);
+        opacity: 0.9;
         }
        /*This class is created to make an item always on top*/
        .menu {
