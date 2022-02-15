@@ -22,3 +22,7 @@ ul {
 .menubaritem:hover .hiddenmenu {
   display:block;
 }
+
+.menubaritem:hover{
+  background-color: rgb(155, 101, 30);
+}

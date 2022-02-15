@@ -18,13 +18,11 @@
        /*justify-content: space-around; /*non funziona insieme a grow e margin auto*/
       }
       .hiddenmenu{
-        width: 300px;
         position: fixed;
         display: none;
         top: 57.44px; /*Margin to overcome an "always on top item"*/
         color: hsla(61, 14%, 93%, 1);
         background-color: rgb(155, 101, 30);
-        margin-left: -150px;
         }
        /*This class is created to make an item always on top*/
        .menu {
@@ -35,6 +33,7 @@
        }
       /*Vertical menu*/
      .vertmenu{
+       display: none;
        margin-left: 20px;
        background-color: rgb(200, 200, 202);
        min-width: 200px;
@@ -66,6 +65,8 @@
       display: block;
       flex: 0 1 auto; /* Default */
       list-style-type: none;
+      width: 300px;
+      text-align: center;
     }
     .vertbaritem {
       display: block;
