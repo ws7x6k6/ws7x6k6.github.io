@@ -1,7 +1,7 @@
-  /*Resetting values*/
-  body{
-    margin:0;
-    padding: 0px;
+/*Resetting values*/
+body{
+  margin:0;
+  padding: 0px;
 }
 /*
 h1{
@@ -18,11 +18,9 @@ ul {
   margin: 0;
   padding: 0;
 }
-
 .menubaritem:hover .hiddenmenu {
   display:block;
 }
-
 .menubaritem:hover{
   background-color: rgb(155, 101, 30);
 }
