@@ -32,38 +32,18 @@
          left: 0;
          right: 0;
        }
-      /*Vertical menu*/
-     .vertmenu{
-       display: none;
-       margin-left: 20px;
-       background-color: rgb(200, 200, 202);
-       min-width: 200px;
-       width: 50%;
-       min-height: 80vh;
-       margin-top: 10px;
-       margin-bottom: 10px;
-       overflow-y: scroll;
-    }
     .main{
       grid-column: 2/3;
       margin: 10px;
       min-height: 100vh;
-    }
-    .footer{
-      display: block;
-      padding-left: 100px;
-      padding-right: 100px;
-      padding-top: 30px;
-      padding-bottom: 100px; 
-      background-color:rgb(79, 79, 82);
-      color: hsla(61, 14%, 93%, 1);
     }
     .menubar {
       display: flex;
       align-items: stretch; /* Default */
       justify-content: space-evenly;
       width: 100%;
-      margin: 0;
+      /*margin-inline-start: 10%;
+      margin-inline-end: 10%;*/
       padding: 0;
     }
     .menubaritem {
