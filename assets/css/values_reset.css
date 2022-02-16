@@ -24,3 +24,6 @@ ul {
 .menubaritem:hover{
   background-color: rgb(155, 101, 30);
 }
+h1,h3,p {
+  font-family: 'Archivo', sans-serif;
+}

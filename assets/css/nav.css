@@ -1,13 +1,4 @@
-.container {
-  margin-top: 100px; /*Margin to overcome an "always on top item"*/
-  display: grid;
-  grid-template-columns: 1fr 1000px 1fr;
-  grid-template-rows: auto;
-}
-h1,h3,p {
-  font-family: 'Archivo', sans-serif;
-}
-/*This menu should be always on top*/
+/*Menu should be always on top*/
 .menu{
   position: fixed;
   top: 0;
@@ -18,19 +9,6 @@ h1,h3,p {
   color: hsla(61, 14%, 93%, 1);
   background-color: rgb(206, 161, 102);
   /*justify-content: space-around; /*non funziona insieme a grow e margin auto*/
-}
-.hiddenmenu{
-  position: fixed;
-  display: none;
-  top: 57.44px; /*Margin to overcome an "always on top item"*/
-  color: hsla(61, 14%, 93%, 1);
-  background-color: rgb(155, 101, 30);
-  opacity: 0.9;
-}
-.main{
-  grid-column: 2/3;
-  margin: 10px;
-  min-height: 100vh;
 }
 .menubar {
   display: flex;
@@ -47,5 +25,14 @@ h1,h3,p {
   list-style-type: none;
   width: 20%;
   text-align: center;
-    }
+}
+.hiddenmenu{
+  position: fixed;
+  display: none;
+  top: 57.44px; /*Margin to overcome an "always on top item"*/
+  color: hsla(61, 14%, 93%, 1);
+  background-color: rgb(155, 101, 30);
+  opacity: 0.9;
+  width: inherit;
+}
 
