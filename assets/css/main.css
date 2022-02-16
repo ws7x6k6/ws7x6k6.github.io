@@ -11,6 +11,10 @@
    }
     /*This menu should be always on top, we will make a dedicated class for that purpose*/
    .menu{
+       position: fixed;
+       top: 0;
+       left: 0;
+       right: 0;
        display: flex;
        flex-flow: wrap;
        color: hsla(61, 14%, 93%, 1);
@@ -25,13 +29,6 @@
         background-color: rgb(155, 101, 30);
         opacity: 0.9;
         }
-       /*This class is created to make an item always on top*/
-       .menu {
-         position: fixed;
-         top: 0;
-         left: 0;
-         right: 0;
-       }
     .main{
       grid-column: 2/3;
       margin: 10px;
@@ -53,8 +50,4 @@
       width: 20%;
       text-align: center;
     }
-    .vertbaritem {
-      display: block;
-      flex: 0 1 auto; /* Default */
-      list-style-type: none;
-    }
+
