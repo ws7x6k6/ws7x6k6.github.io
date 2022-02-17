@@ -25,3 +25,6 @@
   min-height: inherit; 
   color: hsla(61, 14%, 93%, 1);
 }
+p {
+  word-break: break-all;
+}
