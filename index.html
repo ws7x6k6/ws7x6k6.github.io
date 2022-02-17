@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Importante specialmente per i siti responsive-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -8,11 +9,12 @@
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="assets/css/nav.css"/>
   <link rel="stylesheet" href="assets/css/values_reset.css"/>
-  <head>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <title>Programming Notes</title>
-  </head>
-  <style></style>
+  <link rel="stylesheet" href="assets/css/nav.css"/>
+  <link rel="stylesheet" href="assets/css/container.css"/>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <title>Programming Notes</title>
+</head>
+<style></style>
 
 <body>
   <!--Navigation bar-->
@@ -25,33 +27,27 @@
     </script>
     <!--end of Navigation bar-->
 
-  <div class="container" style="margin-top: 100px; display: grid; grid-template-columns: 1fr 1000px 1fr; grid-template-rows: auto;">
-    <div class="main" style="grid-column: 2/3; margin: 10px; min-height: 100vh;">
-      <h1>Programming Notes</h1>
-      <br><br><br><br>
-      <p>Sito nato per offrire una raccolta di dispense, esperienze e guide sul mondo dell'informatica e della programmazione</p>
-      <br><br><br><br><br><br><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in neque a 
-      sem elementum lacinia. Nulla nulla purus, fringilla et metus ultricies, tempus c
-      onsequat lorem. Duis lobortis fringilla nunc, a laoreet nisi pellentesque ut. Mauris 
-      diam arcu, mattis sed mauris ut, pellentesque posuere massa. Etiam consequat vitae mi 
-      eget mattis. Integer felis mauris, hendrerit non congue eget, ornare at sapien. 
-      Ut accumsan eget nibh ut molestie. In interdum nulla enim, at varius enim lobortis
-      nec. Donec finibus mattis arcu sit amet cursus. Mauris non sapien quis dui auctor
-      dapibus a et purus.</p>
-      <br><br><br><br><br><br><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in neque a 
-      sem elementum lacinia. Nulla nulla purus, fringilla et metus ultricies, tempus c
-      onsequat lorem. Duis lobortis fringilla nunc, a laoreet nisi pellentesque ut. Mauris 
-      diam arcu, mattis sed mauris ut, pellentesque posuere massa. Etiam consequat vitae mi 
-      eget mattis. Integer felis mauris, hendrerit non congue eget, ornare at sapien. 
-      Ut accumsan eget nibh ut molestie. In interdum nulla enim, at varius enim lobortis
-      nec. Donec finibus mattis arcu sit amet cursus. Mauris non sapien quis dui auctor
-      dapibus a et purus.</p>  
-      <hr>
-      <br> 
+  <div class="container">
+
+    <div class="leftcolwrapper" style="grid-column: 1/2; min-height: 100vh; ">
+      <div class="columnavbar">
+        <h1 style="background-color: grey; padding: 5px;" >Context menu</h1>
+      </div>
     </div>
-  </div> 
+    
+    <div class="mainwrapper" style="grid-column: 2/3; min-height: 100vh;">
+      <div class="main">
+        <h1>Index</h1>
+      </div>
+    </div>
+
+  <div class="rightcolwrapper" style="grid-column: 3/4; min-height: 100vh;">
+    <div class="columnavbar">
+      <h1 style="background-color: grey; padding: 5px;" >Got lost? Here's a sitemap</h1>
+      </div>
+  </div>
+</div>
+
  
   <!--Footer-->
   <div id="footer-placeholder">

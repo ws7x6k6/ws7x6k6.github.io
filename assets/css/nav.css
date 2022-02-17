@@ -1,38 +1,30 @@
 /*Menu should be always on top*/
-.menu{
+.fixed{
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  flex-flow: wrap;
-  color: hsla(61, 14%, 93%, 1);
-  background-color: rgb(206, 161, 102);
-  /*justify-content: space-around; /*non funziona insieme a grow e margin auto*/
 }
+.menu{
+  display: flex;
+  color: hsla(61, 14%, 93%);
+  background-color: rgb(206, 161, 102);
+  }
 .menubar {
   display: flex;
-  align-items: stretch; /* Default */
-  justify-content: space-evenly;
   width: 100%;
-  /*margin-inline-start: 10%;
-  margin-inline-end: 10%;*/
-  padding: 0;
 }
 .menubaritem {
-  display: block;
-  flex: 0 1 auto; /* Default */
   list-style-type: none;
-  width: 20%;
   text-align: center;
+  width: 20%;
 }
 .hiddenmenu{
   position: fixed;
   display: none;
   top: 57.44px; /*Margin to overcome an "always on top item"*/
-  color: hsla(61, 14%, 93%, 1);
-  background-color: rgb(155, 101, 30);
+  background-color: inherit;
   opacity: 0.9;
-  width: inherit;
+  width: calc(20%);
 }
 

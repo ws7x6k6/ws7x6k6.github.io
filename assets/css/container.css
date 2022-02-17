@@ -1,0 +1,27 @@
+.columnavbar{
+  border:5px;
+  border-style: solid;
+  border-color: white;
+  padding: 20px;
+  background-color: rgb(218, 214, 214);
+  min-height: inherit;
+  color: hsla(61, 14%, 93%, 1);
+}
+.container{
+  margin-top: 57.44px;
+  display: grid; 
+  border: 5px;
+  border-style: solid;
+  border-color: white;
+  grid-template-columns: 1fr 1000px 1fr;
+  grid-template-rows: auto;
+}
+.main{
+  border: 5px; 
+  border-style: solid; 
+  border-color: white; 
+  padding: 20px; 
+  background-color: rgb(223, 209, 190); 
+  min-height: inherit; 
+  color: hsla(61, 14%, 93%, 1);"
+}
