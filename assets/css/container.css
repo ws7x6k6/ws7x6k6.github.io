@@ -5,6 +5,7 @@
   padding: 20px;
   background-color: rgb(218, 214, 214);
   min-height: inherit;
+  max-height: 100vh;
   color: hsla(61, 14%, 93%, 1);
 }
 .container{
@@ -25,6 +26,27 @@
   min-height: inherit; 
   color: hsla(61, 14%, 93%, 1);
 }
-p {
-  word-break: break-all;
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(223, 209, 190); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:  rgb(206, 161, 102); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
