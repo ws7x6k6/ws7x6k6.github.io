@@ -1,10 +1,7 @@
 /*Resetting values*/
-body{
+body,h1{
   margin:0;
   padding: 0px;
-}
-h1{
-    margin: 0px;
 }
 a:link, a:hover {
   text-decoration: none;
@@ -12,15 +9,10 @@ a:link, a:hover {
 a, a:visited, a:hover, a:active {
   color: inherit;
 }
-ul {
+ul,li {
   margin: 0;
   padding: 0;
-}
-.menubaritem:hover .hiddenmenu {
-  display:block;
-}
-.menubaritem:hover{
-  background-color: rgb(155, 101, 30);
+  list-style-type: none;
 }
 h1,h3,p {
   font-family: 'Archivo', sans-serif;
