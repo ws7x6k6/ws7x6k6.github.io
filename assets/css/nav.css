@@ -27,3 +27,10 @@
 .menubaritem:hover{
   background-color: rgb(155, 101, 30);
 }
+
+ul.ulmenu{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
